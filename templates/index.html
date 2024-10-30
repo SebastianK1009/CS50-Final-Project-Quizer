@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Index
+{% endblock %}
+
+{% block main %}
+<h1>
+    Your Quiz
+</h1>
+{% if library == [] %}
+    <h5 style="color:#D3D3D3">You haven't created any quiz</h5>
+{% endif %}
+{% for quiz in library %}
+    <hr>
+    <h3 style="color:#288EEF">
+    #{{ quiz["code"] }} Attempts:{{ quiz["attempts"] }}
+
+    <h3>
+    {% for i in range(1,4) %}
+    <div>
+        {{ i }}. {{ quiz["score"][i-1] }}
+    </div>
+    {% endfor %}
+{% endfor %}
+
+<hr>
+<h1>
+    Recently Taken
+</h1>
+{% if recents == [] %}
+    <h5 style="color:#D3D3D3">You haven't joined any quiz</h5>
+{% endif %}
+
+{% for recent in recents %}
+    <hr>
+    <h3>
+    #{{ recent["code"] }}
+    <div>
+    Marks: {{ recent["mark"] }}/3
+    </div>
+    <h3>
+{% endfor %}
+
+{% endblock %}

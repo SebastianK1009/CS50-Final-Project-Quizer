@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Create
+{% endblock %}
+
+{% block main %}
+<form action="/create" method="post">
+    <div>
+        <hr>
+        <h3>
+            Question 1
+        </h3>
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="q1" name="q1" placeholder="Question" type="text">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="a1" name="a1" placeholder="Answer" type="text">
+    </div>
+    <div>
+        <hr>
+        <h3>
+            Question 2
+        </h3>
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="q2" name="q2" placeholder="Question" type="text">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="a2" name="a2" placeholder="Answer" type="text">
+    </div>
+    <div>
+        <hr>
+        <h3>
+            Question 3
+        </h3>
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="q3" name="q3" placeholder="Question" type="text">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="a3" name="a3" placeholder="Answer" type="text">
+    </div>
+    <div style="margin:15px">
+        <button class="btn btn-primary" type="submit">Create</button>
+    </div>
+</form>
+{% endblock %}

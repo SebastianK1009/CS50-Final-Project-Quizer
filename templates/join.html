@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Join
+{% endblock %}
+
+{% block main %}
+<form action="/join" method="post">
+    <div>
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="code" style='text-transform:uppercase' placeholder="Enter Quiz Code" type="text">
+    </div>
+    <div style="margin:15px">
+        <button class="btn btn-primary" type="submit">Join</button>
+    </div>
+{% endblock %}

@@ -1,0 +1,27 @@
+cd/* Size for brand */
+nav .navbar-brand
+{
+    font-size: xx-large;
+}
+
+/* Colors for brand */
+nav .navbar-brand .blue
+{
+    font-size: xx-large;
+    font-family: monospace;
+    color: #ADD8E6;
+}
+
+body {
+    background-color: #F4F4F4;
+}
+
+h1 {
+    font-family: cursive;
+    font-color: #424242;
+}
+
+h3 {
+    font-family: cursive;
+    font-color: #424242;
+}

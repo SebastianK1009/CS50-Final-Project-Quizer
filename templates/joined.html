@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Joined
+{% endblock %}
+
+{% block main %}
+<form action="/joined" method="post">
+    <div style="margin:15px">
+        <h3>{{ questions[0]["question"] }}</h3>
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="a1" placeholder="Answer" type="text">
+    </div>
+    <div style="margin:15px">
+        <h3>{{ questions[1]["question"] }}</h3>
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="a2" placeholder="Answer" type="text">
+    </div>
+    <div style="margin:15px">
+        <h3>{{ questions[2]["question"] }}</h3>
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="a3" placeholder="Answer" type="text">
+    </div>
+    <div style="margin:15px">
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+    </div>
+</form>
+{% endblock %}
